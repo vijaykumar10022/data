@@ -9,7 +9,7 @@ def predict(request):
 		final=[np.array(int_features)]
 		print(int_features)
 		print(final)
-		model=pickle.load(open("C:/Users/Admin/Desktop/Django_Practice/Tot-Corona/heroku_demo/demo/myfile.pkl",'rb'))
+		model=pickle.load(open("https://github.com/vijaykumar10022/data/myfile.pkl",'rb'))
 		prediction=model.predict_proba(final)
 		output='{0:.{1}f}'.format(prediction[0][1], 2)
 		if output>str(0.5):
