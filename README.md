@@ -472,3 +472,4 @@ Add class .control-label to all &lt;label&gt; elements
             </form> <!-- /form -->
         </div> <!-- ./container -->
 ~~~
+![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/registration%20form.JPG)
