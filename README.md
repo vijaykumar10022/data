@@ -61,4 +61,168 @@
  </form> 
 ~~~
 ![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-textfield-control.png)]
+> Note: If you will omit 'name' attribute then the text filed input will not be submitted to server.
 
+### HTML textarea tag in form
+* The <textarea> tag in HTML is used to insert multiple-line text in a form. The size of <textarea> can be specify either using "rows" or "cols" attribute or by CSS.
+
+### Example:
+ ~~~ Html
+ <form>  
+        Enter your address:<br>  
+      <textarea rows="2" cols="20"></textarea>  
+  </form> 
+ ~~~
+ ![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-textarea-tag-in-form.png)]
+ 
+### Label Tag in Form
+* It is considered better to have label in form. As it makes the code parser/browser/user friendly.
+* If you click on the label tag, it will focus on the text control. To do so, you need to have for attribute in label tag that must be same as id attribute of input tag.
+
+> NOTE: It is good to use <label> tag with form, although it is optional but if you will use it, then it will provide a focus when you tap or click on label tag. It is more worthy with touchscreens.
+
+~~~ Html
+<form>  
+    <label for="firstname">First Name: </label> <br/>  
+              <input type="text" id="firstname" name="firstname"/> <br/>  
+   <label for="lastname">Last Name: </label>  
+              <input type="text" id="lastname" name="lastname"/> <br/>  
+ </form>  
+~~~
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-label-tag-in-form.png)]
+
+### HTML Password Field Control
+* The password is not visible to the user in password field control.
+### Example
+~~~ Html
+<form>  
+    <label for="password">Password: </label>  
+              <input type="password" id="password" name="password"/> <br/>  
+</form>  
+~~~
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-password-field-control.png)]
+
+### HTML Email Field Control
+* The email field in new in HTML 5. It validates the text for correct email address. You must use @ and . in this field.
+~~~ Html
+<form>  
+    <label for="email">Email: </label>  
+              <input type="email" id="email" name="email"/> <br/>  
+</form>  
+~~~
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-5-email-field-control.png)]
+
+> Note: If we will not enter the correct email, it will display error like:
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-5-email-field-control2.png)]
+
+### Radio Button Control
+* The radio button is used to select one option from multiple options. It is used for selection of gender, quiz questions etc.
+
+* If you use one name for all the radio buttons, only one radio button can be selected at a time.
+
+* Using radio buttons for multiple options, you can only choose a single option at a time.
+
+~~~ Html
+<form>  
+    <label for="gender">Gender: </label>  
+              <input type="radio" id="gender" name="gender" value="male"/>Male  
+              <input type="radio" id="gender" name="gender" value="female"/>Female <br/>  
+</form>  
+~~~
+
+
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/radio-button-control.png)]
+
+### Checkbox Control
+* The checkbox control is used to check multiple options from given checkboxes.
+~~~ Html
+<form>  
+Hobby:<br>  
+              <input type="checkbox" id="cricket" name="cricket" value="cricket"/>  
+                 <label for="cricket">Cricket</label> <br>  
+              <input type="checkbox" id="football" name="football" value="football"/>  
+                 <label for="football">Football</label> <br>  
+              <input type="checkbox" id="hockey" name="hockey" value="hockey"/>  
+                 <label for="hockey">Hockey</label>  
+</form>  
+~~~
+> Note: These are similar to radio button except it can choose multiple options at a time and radio button can select one button at a time, and its display.
+
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/checkbox-control.png)]
+
+### Submit button control
+* HTML <input type="submit"> are used to add a submit button on web page. When user clicks on submit button, then form get submit to the server.
+### Syntax:
+~~~ Html
+<input type="submit" value="submit">  
+~~~
+* The type = submit , specifying that it is a submit button
+
+* The value attribute can be anything which we write on button on web page.
+
+* The name attribute can be omit here.
+### Example
+~~~ Html
+<form>  
+    <label for="name">Enter name</label><br>  
+    <input type="text" id="name" name="name"><br>  
+    <label for="pass">Enter Password</label><br>  
+    <input type="Password" id="pass" name="pass"><br>  
+    <input type="submit" value="submit">  
+</form>  
+~~~
+
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/submit-button-control.png)]
+
+### HTML <fieldset> element:
+ * The <fieldset> element in HTML is used to group the related information of a form. This element is used with <legend> element which provide caption for the grouped elements.
+### Example
+ ~~~ Html
+ <form>  
+     <fieldset>  
+      <legend>User Information:</legend>  
+    <label for="name">Enter name</label><br>  
+<input type="text" id="name" name="name"><br>  
+<label for="pass">Enter Password</label><br>  
+<input type="Password" id="pass" name="pass"><br>  
+<input type="submit" value="submit">  
+</fieldset>  
+</form>  
+ ~~~
+
+
+![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-fieldset-element.png)
+
+
+
+
+### Forms with Bootstrap 4
+
+### Bootstrap Form Layouts
+* Bootstrap provides three types of form layouts:
+ * Vertical form (this is default)
+ * Horizontal form
+ * Inline form
+* Standard rules for all three form layouts:
+ * Wrap labels and form controls in <div class="form-group"> (needed for optimum spacing)
+ * Add class .form-control to all textual <input>, <textarea>, and <select> elements
+### Bootstrap Vertical Form (default)
+ * The following example creates a vertical form with two input fields, one checkbox, and a submit button:
+### Example
+ ~~~ Html
+ <form action="#">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+ ~~~
+ 
