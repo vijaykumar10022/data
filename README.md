@@ -283,4 +283,47 @@ Add class .control-label to all &lt;label&gt; elements
 </form>
 ~~~
 ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/Horizontal%20form.JPG)
+------
+### Bootstrap Form Inputs
+ * Supported Form Controls
+  * input
+  * textarea
+  * checkbox
+  * radio
+  * select
+### Bootstrap Input
+* Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.
+> Note: Inputs will NOT be fully styled if their type is not properly declared!
+### Example
+~~~ Html
+<div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+~~~
 
+### Bootstrap Textarea
+### Example
+~~~ Html
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+~~~
+
+### Bootstrap Checkboxes
+<div style="margin:20px 0 25px 0;">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
+</div>
