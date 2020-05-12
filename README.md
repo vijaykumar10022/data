@@ -207,3 +207,4 @@ Hobby:<br>
   * Add class .form-control to all textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; element
 ### Bootstrap Vertical Form (default)
  * The following example creates a vertical form with two input fields, one checkbox, and a submit button:
+![IMAGE ALT TEXT HERE](vertical form.JPG)
