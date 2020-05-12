@@ -201,9 +201,6 @@ Hobby:<br>
   * Vertical form (this is default)
   * Horizontal form
   * Inline form
-  * Standard rules for all three form layouts:
-  * Wrap labels and form controls in <div class="form-group"> (needed for optimum spacing)
-  * Add class .form-control to all textual <input>, <textarea>, and <select> elements
 
 ### Bootstrap Vertical Form (default)
  * The following example creates a vertical form with two input fields, one checkbox, and a submit button:
