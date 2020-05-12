@@ -207,4 +207,80 @@ Hobby:<br>
   * Add class .form-control to all textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; element
 ### Bootstrap Vertical Form (default)
  * The following example creates a vertical form with two input fields, one checkbox, and a submit button:
+
+~~~ Html
+<form action="#">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+~~~
 ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/vertical%20form.JPG)
+### Bootstrap Inline Form
+* In an inline form, all of the elements are inline, left-aligned, and the labels are alongside.
+> Note: This only applies to forms within viewports that are at least 768px wide!
+* Additional rule for an inline form:
+* Add class .form-inline to the &lt;form&gt; element
+~~~ Html
+<form class="form-inline" action="#">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+~~~
+![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/inline%20form.JPG)
+
+### Bootstrap Horizontal Form
+* A horizontal form means that the labels are aligned next to the input field (horizontal) on large and medium screens. On small screens (767px and below), it will transform to a vertical form (labels are placed on top of each input).
+* Additional rules for a horizontal form:
+ * Add class .form-horizontal to the &lt;form&gt; element
+Add class .control-label to all &lt;label&gt; elements
+> Tip: Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout
+~~~ Html
+<form class="form-horizontal" action="/action_page.php">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+~~~
+![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/Horizontal%20form.JPG)
+
