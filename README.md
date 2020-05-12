@@ -194,8 +194,6 @@ Hobby:<br>
 ![IMAGE ALT TEXT HERE](https://static.javatpoint.com/htmlpages/images/html-fieldset-element.png)
 
 
-
-
 ### Forms with Bootstrap 4
 
 ### Bootstrap Form Layouts
@@ -209,7 +207,8 @@ Hobby:<br>
 ### Bootstrap Vertical Form (default)
  * The following example creates a vertical form with two input fields, one checkbox, and a submit button:
 ### Example
- ~~~ Html
+
+~~~ Html
  <form action="#">
   <div class="form-group">
     <label for="email">Email address:</label>
