@@ -316,14 +316,159 @@ Add class .control-label to all &lt;label&gt; elements
 ~~~
 
 ### Bootstrap Checkboxes
-<div style="margin:20px 0 25px 0;">
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Option 1</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Option 2</label>
-    </div>
-    <div class="checkbox disabled">
-      <label><input type="checkbox" value="" disabled>Option 3</label>
-    </div>
+* Checkboxes are used if you want the user to select any number of options from a list of preset options.
+### Example
+~~~ Html
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 1</label>
 </div>
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 2</label>
+</div>
+<div class="checkbox disabled">
+  <label><input type="checkbox" value="" disabled>Option 3</label>
+</div>
+~~~
+> Use the .checkbox-inline class if you want the checkboxes to appear on the same line:
+### Bootstrap Radio Buttons
+* Radio buttons are used if you want to limit the user to just one selection from a list of preset options.
+### Example
+~~~ Html
+<div class="radio">
+  <label><input type="radio" name="optradio" checked>Option 1</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio">Option 2</label>
+</div>
+<div class="radio disabled">
+  <label><input type="radio" name="optradio" disabled>Option 3</label>
+</div>
+~~~
+> Use the .radio-inline class if you want the radio buttons to appear on the same line:
+### Bootstrap Select List
+* Select lists are used if you want to allow the user to pick from multiple options.
+~~~ Html
+<div class="form-group">
+  <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+~~~
+### Basic Media Object
+* Bootstrap provides an easy way to align media objects (like images or videos) to the left or to the right of some content. This can be used to display blog comments, tweets and so on:
+### Example
+~~~ Html
+<!-- Left-aligned -->
+<div class="media">
+  <div class="media-left">
+    <img src="img_avatar1.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">John Doe</h4>
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+
+<!-- Right-aligned -->
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">John Doe</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="media-right">
+    <img src="img_avatar1.png" class="media-object" style="width:60px">
+  </div>
+</div>
+~~~
+
+
+#### Bootstrap Registeration Form
+~~~ Html
+<div class="container">
+            <form class="form-horizontal" role="form">
+                <h2>Registration</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email* </label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password*</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber" class="col-sm-3 control-label">Phone number </label>
+                    <div class="col-sm-9">
+                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+                        <span class="help-block">Your phone number won't be disclosed anywhere </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="Height" class="col-sm-3 control-label">Height* </label>
+                    <div class="col-sm-9">
+                        <input type="number" id="height" placeholder="Please write your height in centimetres" class="form-control">
+                    </div>
+                </div>
+                 <div class="form-group">
+                        <label for="weight" class="col-sm-3 control-label">Weight* </label>
+                    <div class="col-sm-9">
+                        <input type="number" id="weight" placeholder="Please write your weight in kilograms" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="femaleRadio" value="Female">Female
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="maleRadio" value="Male">Male
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+~~~
