@@ -472,4 +472,20 @@ Add class .control-label to all &lt;label&gt; elements
             </form> <!-- /form -->
         </div> <!-- ./container -->
 ~~~
+### Registration form using Bootstrap
+
 ![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/registration%20form.JPG)
+
+### Content Displaying in table format using boot strap
+![IMAGE ALT TEXT HERE](https://github.com/vijaykumar10022/data/blob/master/listofusertable-static.JPG)
+
+
+## Django application using Forms
+
+### Here we  are going to implement, Register Data and Displaying Data in  two ways 
+   * by using Static Procedure
+   * by Using Dynamic Procedure(using Database)
+   
+### by using Static Procedure
+ * user
+
