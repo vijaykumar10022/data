@@ -46,7 +46,7 @@ Flask-WTF==0.14.3
 future==0.18.2
 greenlet==0.4.15
 gunicorn==20.0.4
-httplib2==0.17.0
+httplib2==0.18.0
 idna==2.9
 imagesize==1.2.0
 ipykernel==5.1.4
